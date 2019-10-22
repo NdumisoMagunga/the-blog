@@ -12,29 +12,79 @@
   </head>
   <body style="background-color:rgb(190, 223, 192)">
 
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-          <ul class="navbar-nav" style="float: right">
+      <nav class="navbar navbar-expand-sm sticky-top" style="background-color:rgb(121, 212, 16)">
+          <ul class="navbar-nav" style="width:100%;">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" onclick="location.href='index.html'" style="color:white; border-width: 1px;border-color: aqua;"><strong>Home</strong></a>
             </li>
-            <li class="nav-item right" >
-              <a class="nav-link"  onclick="location.href='admin.html'">Admin</a>
+
+            <ul class="nav justify-content-end" style="width:100%;">
+              <li class="nav-item" >
+              <a class="nav-link"  onclick="location.href=''" style="color:white; border-width: 1px;border-color: aqua;"><strong>About</strong></a>
             </li>
-            <li class="nav-item right" >
+            <li class="nav-item" >
                 <a class="nav-link"
-                    style="border-block-color: white;
-                    border-width:0.5px;
-                    border-radius:2px;
-                    float:right"
-                    onclick="location.href='profile.html'">PROFILE</a>
+                    onclick="location.href=''" style="color:white; border-width: 1px;border-color: aqua;"><strong>Services</strong></a>
               </li>
+              <li class="nav-item" >
+                  <a class="nav-link"  onclick="location.href='profile.html'" style="color:white; border-width: 1px;border-color: aqua;"><strong>Profile</strong></a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link"
+                        onclick="location.href='admin.html'" style="color:white; border-width: 1px;border-color: aqua;"><strong>Admin</strong></a>
+                  </li>
+                  <li class="nav-item" >
+                      <a class="nav-link"
+                          onclick="location.href=''" style="color:white; border-width: 1px;border-color: aqua;"><strong>Sign-out</strong></a>
+                    </li>
+            </ul>
+            
           </ul>
         </nav>
         
-    <div class="jumbotron text-center">
-      <h1>My Blog</h1>
-      <p>this blog is gonna get Ndumiso in the game!</p>
-    </div>
+        <div id="demo" class="carousel slide" data-ride="carousel" style="opacity: 0.5;margin: 5px;;">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner" style="height: 30;">
+              <div class="carousel-item active">
+                <img src="./images/first.jpg" alt="Los Angeles"  style="width: 100%;height: 450px;">
+                <div class="carousel-caption">
+                    <h2>Force Focus</h2>
+                    <p><strong>I build the best websites, <br>Blogs and <br>mobile applications for all ages and styles!</strong></p>
+                  </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="./images/first.jpg" alt="Chicago" style="width: 100%;height: 450px;">
+                <div class="carousel-caption">
+                    <h2>Force Focus</h2>
+                    <p><strong>You can contact me using the below information <br>or just send an email using this blog</strong></p>
+                  </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="./images/first.jpg" alt="New York" style="width: 100%;height: 450px;">
+                <div class="carousel-caption">
+                    <h2>Force focus</h2>
+                    <p><strong>feel free to browse around <br> and see more on the work i do, you can check my CV on personal details</strong></p>
+                  </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
 
       <div class="container" style="width: 100%; text-align:center">
         <h3>This is what my blog has to offer</h3>

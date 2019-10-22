@@ -10,42 +10,102 @@
 
     <title>Ndumiso's profile</title>
   </head>
-  <body style="background-color: dimgray">
+  <body style="background-color:rgb(190, 223, 192)">
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <ul class="navbar-nav" >
+      <nav class="navbar navbar-expand-sm sticky-top" style="background-color:rgb(121, 212, 16)">
+          <ul class="navbar-nav" style="width:100%;">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" onclick="location.href='index.html'" style="color:white; border-width: 1px;border-color: aqua;"><h2></h2></a>
             </li>
-            <li class="nav-item right" >
-                <a class="nav-link"  onclick="location.href='admin.html'">Admin</a>
-            </li>
-        </ul>
-    </nav>
 
-    <div class="jumbotron text-center">
-      <h1>My Blog</h1>
-      <p>this blog is gonna get Ndumiso in the game!</p>
-    </div>
+            <ul class="nav justify-content-end" style="width:100%;">
+              <li class="nav-item" >
+              <a class="nav-link"  onclick="location.href=''" style="color:white; border-width: 1px;border-color: aqua;"><strong>About</strong></a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link"
+                    onclick="location.href=''" style="color:white; border-width: 1px;border-color: aqua;"><strong>Services</strong></a>
+              </li>
+              <li class="nav-item" >
+                  <a class="nav-link"  onclick="location.href='profile.html'" style="color:white; border-width: 1px;border-color: aqua;"><strong>Profile</strong></a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link"
+                        onclick="location.href='admin.html'" style="color:white; border-width: 1px;border-color: aqua;"><strong>Admin</strong></a>
+                  </li>
+                  <li class="nav-item" >
+                      <a class="nav-link"
+                          onclick="location.href=''" style="color:white; border-width: 1px;border-color: aqua;"><strong>Sign-out</strong></a>
+                    </li>
+            </ul>
+            
+          </ul>
+        </nav>
+        
+        <div id="demo" class="carousel slide" data-ride="carousel" style="opacity: 0.5;margin: 5px;;">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner" style="height: 30;">
+              <div class="carousel-item active">
+                <img src="./images/first.jpg" alt="Los Angeles"  style="width: 100%;height: 450px;">
+                <div class="carousel-caption">
+                    <h2>Force Focus</h2>
+                    <p><strong>I build the best websites, <br>Blogs and <br>mobile applications for all ages and styles!</strong></p>
+                  </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="./images/first.jpg" alt="Chicago" style="width: 100%;height: 450px;">
+                <div class="carousel-caption">
+                    <h2>Force Focus</h2>
+                    <p><strong>You can contact me using the below information <br>or just send an email using this blog</strong></p>
+                  </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="./images/first.jpg" alt="New York" style="width: 100%;height: 450px;">
+                <div class="carousel-caption">
+                    <h2>Force focus</h2>
+                    <p><strong>feel free to browse around <br> and see more on the work i do, you can check my CV on personal details</strong></p>
+                  </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+
 
     <!--ths is where it all starts -->
-    <div>
-        <button data-toggle="collapse" data-target="#personal">Personal Details</button>
-        <div id="personal" class="collapse" style="margin:10px">
+    <div class="container">
+        <button data-toggle="collapse" data-target="#personal" style="background-color: crimson; align-self: center;width: 20%;color: white;border-radius: 10px;"><strong>Personal Details</strong></button>
+        <div id="personal" class="row collapse" style="margin:10px">
             <p style="color:floralwhite">
                 <strong>Name</strong> <br>Ndumiso Magunga<br>
                 <strong>Contact</strong><br> 0766392660 <br>
                 <strong>Email</strong><br> magunga55@gmail.com<br>
                 <strong>Git Account</strong><br> https://github.com/NdumisoMagunga <br>
             </p>
-        <button data-toggle="collapse" data-target="#academic">Academic Details</button>
-        <div id="academic" class="collapse">
+        
+        <div class="col">
             <p style="color:floralwhite">
                 <strong>Highest Grade Passed</strong> <br>Grade 12<br>
                 <strong>School</strong><br> Mjokwane Secondary School <br>
                 <strong>Year</strong><br> 2012 <br>
             </p>
-
+          </div>
+          <div class="col">
             <p style="color:floralwhite">
                 <strong>Hegher Education</strong><br>
                 <strong>Institution</strong><br> Tshwane University of Technology <br>
@@ -53,6 +113,7 @@
                 <strong>Year</strong><br>In Progress (One Last module Left, Indusrial Exposure)<br>
             </p>
         </div>
+        <div class="col"></div>
 
         </div>
     </div>
